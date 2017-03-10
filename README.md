@@ -1,51 +1,45 @@
 # ANNs
 ## Artificial Neural Networks (Implementacion con Java)
 
-En la década de 1940, el neurofisiólogo Warren McCulloch y el matemático
-Walter Pits diseñó la primera implementación matemática de una neurona artificial
-Combinando los fundamentos de la neurociencia con las operaciones matemáticas. A eso
-Tiempo, se estaban llevando a cabo muchos estudios sobre la comprensión del cerebro
-Cómo y si se podría simular, pero dentro del campo de la neurociencia. La idea
-De McCulloch y Pits fue una verdadera novedad porque agregó el componente de matemáticas.
+En la década de 1940, el neurofisiólogo [Warren McCulloch](https://es.wikipedia.org/wiki/Warren_McCulloch) y el matemático
+[Walter Pits](https://es.wikipedia.org/wiki/Walter_Pitts) diseñó la primera implementación matemática de una neurona artificial
+Combinando los fundamentos de la neurociencia con las operaciones matemáticas. En ese
+Tiempo, se estaban llevando a cabo muchos estudios sobre la comprensión de Cómo se podria simular el cerebro
+
+La idea De McCulloch y Pits fue una verdadera novedad porque agregó el componente de las matemáticas.
 Además, considerando que el cerebro está compuesto de miles de millones de neuronas, cada una
-Interconectado con otro millón, lo que resulta en unos billones de conexiones,
-Están hablando de una estructura de red gigante. Sin embargo, cada unidad neuronal es muy
+Interconectado con otro millón, lo que da de resultado unos billones de conexiones,
+Estamos hablando de una estructura de red gigante. Sin embargo, cada unidad neuronal es muy
 Simple, actuando como un mero procesador capaz de sumar y propagar señales.
 
 Basándose en este hecho, McCulloch y Pits diseñaron un modelo sencillo para
 Neurona única, inicialmente para simular la visión humana. Las calculadoras disponibles o
-Las computadoras en ese momento eran muy raras pero capaces de tratar con
+Las computadoras en ese momento eran muy nuevas pero capaces de tratar con
 Operaciones bastante bien; Por otro lado, incluso hoy en día tareas como la visión y el sonido
-Reconocimiento no son fácilmente programables sin el uso de frameworks especiales,
-Opuesto a las operaciones y funciones matemáticas. Sin embargo, el
-Cerebro puede realizar estas últimas tareas más eficientemente que las primeras, y este hecho
-Realmente instiga a científicos e investigadores.
+Reconocimiento no son fácilmente programables sin el uso de frameworks especiales, no asi las operaciones y funciones matemáticas. Sin embargo, el cerebro puede realizar estas últimas tareas más eficientemente que las primeras, y este hecho
+Realmente intriga a científicos e investigadores.
 
-Por lo tanto, una ANN se supone que es una estructura para realizar tareas como el patrón
-Reconocimiento, aprendiendo de los datos, y las tendencias de pronóstico, al igual que un experto puede hacer en
-La base del conocimiento, en oposición al enfoque algorítmico convencional que
-Requiere un conjunto de pasos a realizar para lograr un objetivo definido. An ANN en su lugar
-Tiene la capacidad de aprender a resolver alguna tarea por sí misma, debido a su alta
-Estructura de red interconectada.
+Por lo tanto, una [ANN](https://es.wikipedia.org/wiki/Red_neuronal_artificial) (Artificial Neural Newtwork) se supone que es una estructura para realizar tareas como el Reconocimiento de patrones, aprendiendo de datos, y en las tendencias de pronóstico, al igual que un experto puede hacer una base del conocimiento, en oposición al enfoque algorítmico convencional que
+Requiere un conjunto de pasos a realizar para lograr un objetivo definido. Una ANN en su lugar tiene la capacidad de aprender a resolver alguna tarea por sí misma, debido a su alta estructura de red interconectada.
 
 ### El elemento mas básico : "Neurona Artificial"
 
 Las neuronas naturales han demostrado ser procesadores de señales ya que reciben micro señales
-En las dendritas que pueden desencadenar una señal en el axón dependiendo de su fuerza o
-magnitud. Podemos entonces pensar en una neurona como tener un colector de señal en las entradas
-Y una unidad de activación en la salida que puede activar una señal que será reenviada
-A otras neuronas. Por lo tanto, podemos definir la estructura de la neurona artificial como se muestra en la
-Siguiente figura:
+En las dendritas que pueden desencadenar una señal en el axión dependiendo de su fuerza o
+magnitud. Podemos entonces pensar en una neurona es como tener un colector de señal en las entradas
+Y una unidad de activación en la salida que puede activar una señal que será reenviada A otras neuronas. Por lo tanto, podemos definir la estructura de la neurona artificial como se muestra en la Siguiente figura:
+
+
+![](https://i.imgur.com/7tjpx2q.png)
 
 
 ### Dar vida a las neuronas: Funcion de Activacion
 
 
-La salida de la neurona viene dada por una función de activación. Este componente añade
-No linealidad al procesamiento de la red neuronal, que es necesario porque el
-La neurona tiene conductas no lineales. Una función de activación suele estar limitada entre
-Dos valores en la salida, siendo por lo tanto una función no lineal, pero en algunos
-Casos, puede ser una función lineal.
+La salida de la neurona viene dada por una función de activación. Esta funcion añade
+No linealidad al procesamiento de la red neuronal, que es necesario porque la neurona tiene conductas no lineales. Una función de activación suele estar limitada entre dos valores en la salida, siendo por lo tanto una función no lineal, pero en algunos
+casos, puede ser una función lineal. 
+
 Las cuatro funciones de activación más utilizadas son las siguientes:
 
 * Sigmoide
@@ -53,31 +47,42 @@ Las cuatro funciones de activación más utilizadas son las siguientes:
 * Umbral de limitación difícil
 * Puramente lineal
 
-
 ![](https://i.imgur.com/Bwu1Qib.png)
+
 
 ### Los valores fundamentales - pesos
 
-En las redes neuronales, los pesos representan las conexiones entre las neuronas y tienen la capacidad de amplificar o atenuar las señales neuronales, por ejemplo, multiplicar las señales, Modificándolos así. Por lo tanto, mediante la modificación de las señales de red neuronal, los pesos neuronales Tienen el poder de influir en la salida de una neurona, por lo tanto la activación de una neurona Depender de las entradas y de los pesos. Siempre que los insumos provienen tras neuronas o del mundo externo, los pesos se consideran un neural Conexiones establecidas de la red entre sus neuronas. Por lo tanto, puesto que los pesos son
-Interno de la red neuronal e influir en sus resultados, podemos considerarlos como Conocimiento de redes neuronales, siempre que cambiar los pesos cambie la Las capacidades de la red neural y por lo tanto las acciones.
+En las redes neuronales, los pesos representan las conexiones entre las neuronas y  la capacidad de "amplificar" o "atenuar" las señales neuronales (lo que una neurona "real" se logra por medio de impulsos electricos y bioquimicos), ya sea que los pesos por ejemplo, multipliquen las señales, dando asi que el valor de entrada original cambie. 
 
-## Las partes que forman las capas enteras
+Siempre que las entradas (inputs) provienen de otras neuronas o del mundo externo(capa externa o primaria), los pesos se consideran una Conexione establecida de la red entre sus neuronas. 
 
-Las neuronas naturales se organizan en capas, cada una proporcionando un nivel específico de
-tratamiento; Por ejemplo, la capa de entrada recibe estímulos directos desde el exterior
-Mundo, y las capas de salida activan acciones que tendrán una influencia directa en la
-mundo exterior. Entre estas capas, hay una serie de capas ocultas, en el
-Sentido de que no interactúan directamente con el mundo exterior. En el neural artificial
-Todas las neuronas de una capa comparten las mismas entradas y la misma función de
-Que se muestra en la siguiente figura:
+Puesto que los pesos inputs de la red neuronal e influyen en sus resultados, es comun considerarlos como otro input mas de las redes neuronales.
 
-![](https://i.imgur.com/5edtDMk.png)
+![](https://i.imgur.com/wzdi0iJ.png)
+
+.
+### "bias" - Un parametro importante
+
+La neurona artificial puede tener un componente independiente que añade una señal extra A la función de activación. Este componente se llama **bias** (valor de sesgo).
+
+Al igual que las entradas, los sesgos también tienen un peso asociado. Esta función ayuda en la representación del conocimiento de redes neuronales como un sistema más puramente no lineal.
+
+
+
+## Las partes que forman el todo (layers)
+
+
+Las neuronas naturales se organizan en capas, cada capa (layer) proporcionando un nivel específico de tratamiento; Por ejemplo, la capa de entrada recibe estímulos directos desde el Mundo exterio (la "realidad") y las capas de salida activan acciones que tendrán una influencia directa en el mundo exterior. 
+
+Entre estas capas, hay una serie de capas ocultas, en el sentido de que no interactúan directamente con el mundo exterior. En la neurona artificial todas las neuronas de una capa comparten las mismas entradas y la misma función Que se muestra en la siguiente figura.
+
+![](https://i.imgur.com/5edtDMk.png))
 
 Las redes neuronales pueden estar compuestas de varias capas vinculadas, formando los llamados
 Redes multicapa. Las capas neurales se pueden dividir básicamente en tres clases:
 
 * Capa de entrada
-* Capa oculta
+* Capa ocultaa
 * Capa de salida
 
 En la práctica, una capa neural adicional añade otro nivel de abstracción de la Fuera de los estímulos, aumentando así la capacidad de la red neural para representar más complejos conocimiento .
@@ -97,7 +102,7 @@ Básicamente, hay dos modalidades de arquitecturas para redes neuronales:
 	+ Redes de feedforward
 	+ Redes de retroalimentación
 	
-### Redes monocapa
+### Redes mono capa
 
 En esta arquitectura, todas las neuronas se presentan en el mismo nivel, formando una sola, Como se muestra en la siguiente figura:
 
